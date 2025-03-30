@@ -1,0 +1,7 @@
+curl 'http://localhost:8080/user/list'
+curl 'http://localhost:8080/user/1'
+curl -X POST -H "Content-Type: application/json" -d '{"name":"newUser", "phone":"13123456789", "password":"newPassword", "roleId":1}' 'http://localhost:8080/user/register'
+curl -X PUT -H "Content-Type: application/json" -d '{"id":1, "name":"updatedUser", "phone":"13323456789", "password":"updatedPassword", "roleId":2}' 'http://localhost:8080/user/update'
+curl -X DELETE 'http://localhost:8080/user/delete/1'
+curl -X POST 'http://localhost:8080/user/login?username=orangez0&password=password0'
+curl -X POST 'http://localhost:8080/user/assignRole?userId=3&roleId=2'
