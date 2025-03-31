@@ -17,6 +17,17 @@ public class User {
 
     private Integer roleId;
 
+    public User(Integer id, String name, String phone, String password, Integer roleId) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.password = password;
+        this.roleId = roleId;
+    }
+
+    public User() {
+    }
+
     // Getters and Setters
     public Integer getId() {
         return id;
